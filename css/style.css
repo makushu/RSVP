@@ -1,0 +1,23 @@
+body {
+    
+    background-image: url("../images/eight.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.group-title{
+    padding-bottom: 18px;font-size : 24px;
+
+}
+
+.group-position{
+    padding-bottom: 2%;
+}
+
+
+#wrapper{
+    background: rgba(244, 247, 244, 0.9);
+    margin: auto;
+    width: 30%;
+}
