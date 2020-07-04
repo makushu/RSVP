@@ -3,49 +3,56 @@
 
 <head>
 	<title>Happ New Year</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Description" content="event invitation allowing user to add to online Calendar" />
 	<meta name="Keywords" content="event, Calendar, online" />
 	<meta name="Author" content="Phatutshedzo Makushu" />
 
 	<meta charset="utf-8" />
+	<link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+	<video autoplay muted loop id="myVideo">
+		<source src="../images/eight.gif" type="video/gif">
+		Your browser does not support HTML5 video.
+	</video>
+
 	<form action="calender.html">
 		<div id="wrapper">
-			<div class="group-title">New Year's Party reservation</div>
+			<div class="group-title">New Year's Party Reservation</div>
 			<div class="group-position">Name<span style="color: red;"> *</span><br />
 
-				<input type="text" id="name" name="name" id="group-input" required />
+				<input type="text" id="name" id="group-input" required />
 			</div>
 			<div class="group-position">Surname<span style="color: red;"> *</span><br />
 
-				<input type="text" id="surname" name="surname" id="group-input" required />
+				<input type="text" id="surname" id="group-input" required />
 			</div>
 
 			<div class="group-position">Cell number<span style="color: red;"> *</span><br />
-				<input type="text" id="cell" name="cell" id="group-input" required />
+				<input type="tel" id="cell" id="group-input" pattern="[0]{1}[1-9]{1}[0-9]{8}" required />
 			</div>
-			<div class="group-position">Email<span style="color: red;"> *</span><br />
-				<input type="text" id="email" name="email" required />
-			</div>
-
-
+		
 			<div class="group-position">Number of adults<span style="color: red;"> *</span><br />
-				<input type="number" id="numAdults" name="numAdults" required />
+				<input type="number" id="numAdults" required />
 			</div>
 			<div class="group-position">Number of children<br />
-				<input type="number" id="numChildren" name="numChildren" />
+				<input type="number" id="numChildren"/>
 			</div>
 			<div class="group-position">Questions / Comments<br />
-				<textarea id="comments" name="comments" rows="6"></textarea>
+				<textarea rows="6"></textarea>
 			</div>
-			<div class="group-position"><input name="skip_Submit" value="RSVP" type="submit" /></div>
-			<div>
+			<div class="group-position">Party Code<span style="color: red;"> *</span><br />
+				<input type="text" id="numChildren" pattern="[1]{1}[2]{1}[3]{1}" placeholder="code is 123"/>
 			</div>
+			<div class="group-position">
+				<input type="submit" id="submit" value="RSVP"/>
+			</div>
+			
 	</form>
-
+		<footer>Designed by Phatutshedzo Makushu</footer>
 </body>
 
 </html>

@@ -1,23 +1,59 @@
+/* body */
 body {
-    
+    background-color: #000;
     background-image: url("../images/eight.gif");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
     text-align: center;
+    font-family: 'Piedra', cursive;
 }
 
+/* title on the form */
 .group-title{
-    padding-bottom: 18px;font-size : 24px;
-
+    padding-bottom: 18px;
+    font-size : 24px;
 }
 
+/* inputs positions */
 .group-position{
     padding-bottom: 2%;
 }
 
-
+/* div that circles other divs */
 #wrapper{
     background: rgba(244, 247, 244, 0.9);
     margin: auto;
     width: 30%;
+}
+
+/* submit button */
+#submit{
+        background-color:#00ff00;
+        border-radius:28px;
+        color:#000;
+        padding:16px 31px;
+    }
+
+/* submit button on hover */
+#submit:hover {
+    background-color:#000;
+    color: #00ff00;
+}
+  
+@media (max-width: 700px) {
+    /* media query for body */
+    body{
+        background-color: #000;  
+        background-image: url("../images/eight.gif");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        text-align: center;
+    }
+
+    /* media query for div that circles other divs */
+    #wrapper{
+        background: rgba(244, 247, 244, 0.9);
+        margin: auto;
+        width: 50%;
+    }
 }
